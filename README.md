@@ -2,6 +2,14 @@
 
 Aplicativo de controle de estoque com a Activity principal chamada cafeEstoque.
 
+## Objetivo
+
+Este projeto foi desenvolvido para praticar conceitos de Programacao Orientada a Objetos,
+desenvolvimento Android nativo, tratamento de dados locais e boas praticas de persistencia segura.
+
+A proposta central e construir uma base simples, mas robusta, para cadastro e controle de estoque,
+com foco em clareza de codigo, validacao de regras de negocio e seguranca no armazenamento local.
+
 ## Como abrir
 
 1. Instale o Android Studio (ele ja traz o JDK e o Android SDK).
@@ -19,20 +27,18 @@ Aplicativo de controle de estoque com a Activity principal chamada cafeEstoque.
 - Alternancia de ordenacao entre nome e quantidade.
 - Salvamento automatico ao alterar dados e ao sair da tela.
 
-## Decisoes de seguranca e robustez
+## Seguranca e Robustez
 
-- Os dados ficam em armazenamento interno privado (getFilesDir), acessivel apenas ao app.
-- Persistencia em JSON em vez de serializacao Java, que permite execucao de codigo
-  malicioso ao desserializar arquivos alterados.
-- Gravacao atomica: escreve em arquivo temporario, sincroniza e so entao substitui o
-  arquivo final, evitando perda de dados se o app for encerrado no meio da operacao.
-- Arquivo corrompido ou de versao desconhecida e isolado e o app reinicia vazio, sem travar.
-- Limite de 4 MB na leitura do arquivo de dados.
-- Validacao de entrada: nome obrigatorio, sem duplicidade, limite de caracteres,
-  quantidade numerica entre 0 e 1.000.000, rejeicao de NaN e infinito.
-- IDs unicos garantidos tambem na leitura do arquivo.
-- allowBackup desativado para nao copiar o estoque para backups externos.
-- Nenhuma permissao declarada no manifesto e nenhum acesso a rede.
+- Armazenamento em diretorio privado do aplicativo.
+- Persistencia em JSON.
+- Gravacao atomica dos dados.
+- Validacao rigorosa de entrada.
+- Protecao contra arquivos corrompidos.
+- Limite de tamanho dos arquivos carregados.
+- IDs unicos garantidos.
+- Backup externo desabilitado.
+- Nenhuma permissao sensivel utilizada.
+- Nenhum acesso a internet.
 
 ## Estrutura
 
@@ -48,3 +54,11 @@ Aplicativo de controle de estoque com a Activity principal chamada cafeEstoque.
 
 - app/src/test - testes unitarios (JVM)
 - app/src/androidTest - testes instrumentados (dispositivo/emulador)
+
+## Licenca
+
+Todos os direitos reservados.
+
+Este projeto e disponibilizado apenas para fins de estudo, analise de codigo e demonstracao de portfolio.
+
+Nao e permitida a copia, redistribuicao, modificacao ou utilizacao comercial sem autorizacao expressa do autor.
