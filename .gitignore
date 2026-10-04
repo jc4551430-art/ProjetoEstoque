@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *.iml
 .gradle/
 .idea/
@@ -11,3 +12,26 @@ captures/
 .cxx/
 *.jks
 *.keystore
+=======
+.gradle
+**/build/
+!**/src/**/build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Avoid ignore Gradle wrapper properties
+!gradle-wrapper.properties
+
+# Cache of project
+.gradletasknamecache
+
+# Eclipse Gradle plugin generated files
+# Eclipse Core
+.project
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+>>>>>>> 1bea704d6ad5dde532496af031477db444a5a12d
