@@ -1,6 +1,9 @@
 *.iml
 .gradle/
 .idea/
+.gradle_home/
+buil*/
+out/
 build/
 local.properties
 captures/
