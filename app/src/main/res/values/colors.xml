@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="vermelho_primario">#E53935</color>
+    <color name="vermelho_escuro">#B71C1C</color>
+    <color name="vermelho_claro">#FFCDD2</color>
+    <color name="preto_fundo">#000000</color>
+    <color name="preto_superficie">#121212</color>
+    <color name="preto_card">#1E1E1E</color>
+    <color name="cinza_texto">#E0E0E0</color>
+    <color name="cinza_claro">#F5F5F5</color>
+</resources>

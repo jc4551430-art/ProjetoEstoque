@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/preto_fundo"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo"
+        android:textColor="@color/vermelho_primario"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/campoPesquisa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/pesquisar"
+        android:textColor="@color/white"
+        android:textColorHint="@color/cinza_texto"
+        android:backgroundTint="@color/vermelho_primario"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLength="60"
+        android:maxLines="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+
+        <Button
+            android:id="@+id/botaoAdicionar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/vermelho_primario"
+            android:text="@string/adicionar"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/botaoOrdenar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/preto_superficie"
+            android:text="@string/ordenar"
+            android:textColor="@color/vermelho_primario" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/botaoFormulas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/vermelho_escuro"
+        android:text="@string/formulas"
+        android:textColor="@color/white"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/rodapeResumo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:text="@string/dica"
+        android:textColor="@color/cinza_texto"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+    <ListView
+        android:id="@+id/listaProdutos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/preto_superficie"
+        android:dividerHeight="8dp" />
+
+    <TextView
+        android:id="@+id/textoVazio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="24dp"
+        android:text="@string/vazio"
+        android:textColor="@color/cinza_texto"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</LinearLayout>

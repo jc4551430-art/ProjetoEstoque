@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Estoque Café</string>
+    <string name="titulo">Gestão de Estoque</string>
+    <string name="pesquisar">Pesquisar produto...</string>
+    <string name="adicionar">Novo Produto</string>
+    <string name="ordenar">Ordenar</string>
+    <string name="dica">Toque para editar | Segure para excluir</string>
+    <string name="vazio">Nenhum produto cadastrado.</string>
+    <string name="formulas">Fórmulas</string>
+    <string name="aplicar_formula">Aplicar Fórmula</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="salvar">Salvar</string>
+    <string name="excluir">Excluir</string>
+</resources>
